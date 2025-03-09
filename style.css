@@ -112,6 +112,7 @@ header ul{
 .ourStoryImg img{
     border-radius: 10px;
     margin: 10px;
+    height: 300px;
 }
 .ourStoryBody{
     margin: 40px 20px;
@@ -122,5 +123,122 @@ header ul{
 
 .ourStoryBody h2{
     color: #ff5e00df;
+}
+
+.ourStoryBody p{
+    padding: 20px 0px;
+}
+
+
+/* This is Visit Us Section */
+
+.visitUs{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe9dddf;
+    padding: 50px;
+}
+.visitUsHeading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.visitUsHeading h2{
+    color: #ff5e00df;
+}
+.visitUsCards{
+    display: flex;
+    padding: 20px;
+}
+
+.visitUsCard{
+    width: 30%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.visitUsCard i{
+    display: inline;
+    color: #ff5e00df;
+}
+.visitUsCard h4{
+    display: inline;
+}
+
+.visitUsCard p{
+    padding-top: 15px;
+}
+
+
+/* This is footer */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #111130df;
+    color: #bababa;  
+    padding: 50px;
+}
+
+.footerFirstPart{
+    display: flex;
+}
+
+.footerLogo{
+    width: 30%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.logo {
+    display: inline;
+    width: 40px;
+
+}
+.footerLogo h3{
+    display: inline;
+    color: #fff;
+}
+.footerLogo p{
+    padding-top: 15px;
+}
+.footerLinks{
+    width: 30%;
+}
+.footerLinks h3{
+    color: #fff;
+}
+.footerLinks ul{
+    list-style: none;
+    padding-top: 20px;
+}
+.footerLinks ul li{
+    padding-bottom: 10px;
+}
+.footerLinks ul li a{
+    text-decoration: none;
+    color: #bababa;
+}
+
+.followUs h3{
+    color: #fff;
+}
+.followUs i{
     padding: 10px;
 }
+
+.footerCopyRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #bababa;
+}
+
+
