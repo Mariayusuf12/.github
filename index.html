@@ -13,21 +13,32 @@
     
     <h3> <i class="fa-solid fa-bowl-food"></i> Sanag Restaurant</h3>
     <nav>
-        <ul>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
             <li><a href="#">Home</a></li>
             <li><a href="#">menu</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
+        <ul>
+            <li class="hideOnMobile"><a href="#">Home</a></li>
+            <li class="hideOnMobile"><a href="#">menu</a></li>
+            <li class="hideOnMobile"><a href="#">About</a></li>
+            <li class="hideOnMobile"><a href="#">Contact</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
     </nav>
 </header>
 
     <!--Hero section-->
-    <div class="hero-section">
+    <div class="hero-section" style="height: 300px; background-color: lightgray;">
     <h1>Welcome to Sanag Restaurant</h1>
     <p>Experience authentic Somali cuisine in the hear of Minnesota</p>
     <button class="Menu"> View our Menu </button>
 </div>
+
+
+
 
 <!-- This is Culinary Section -->
 <div class="culinary">
@@ -37,44 +48,111 @@
     </div>
     <div class="culinaryCards">
         <div class="culinaryClass">
-            <img src="./images/image1.jpeg" alt="">
+            <img src="https://foodish-api.com/images/rice/rice19.jpg"
+             alt="">
             <h4>spiced Rice Platter</h4>
             <p>Aromatic rice served with tender meat and vegetables</p>
         </div>
         <div class="culinaryClass">
-            <img src="./images/image1.jpeg" alt="">
-            <h4>spiced Rice Platter</h4>
+            <img src="./images/meat-123668_1280.jpg" alt="">
+            <h4>fresh grilled meats</h4>
             <p>Aromatic rice served with tender meat and vegetables</p>
         </div>
         <div class="culinaryClass">
-            <img src="./images/image1.jpeg" alt="">
-            <h4>spiced Rice Platter</h4>
+            <img src="./images/top-view-steak-with-fried-ribs-with-fried-chicken-potatoes-board-with-sauce.jpg" alt="">
+            <h4>spiced lamb</h4>
+            <p>Tender lamb slow-cooked with traditional spice.</p>
+        </div>
+        <div class="culinaryClass">
+            <img src="./images/flatbread-6993386_1280.jpg" alt="">
+            <h4>Fresh Flatbreads</h4>
             <p>Aromatic rice served with tender meat and vegetables</p>
         </div>
         <div class="culinaryClass">
-            <img src="./images/image1.jpeg" alt="">
-            <h4>spiced Rice Platter</h4>
-            <p>Aromatic rice served with tender meat and vegetables</p>
+            <img src="./images/pancakes-1851249_1280.jpg" alt="">
+            <h4>Traditional breakfast</h4>
+            <p>A hearty start to you day with somali flavors</p>
         </div>
         <div class="culinaryClass">
-            <img src="./images/image1.jpeg" alt="">
-            <h4>spiced Rice Platter</h4>
-            <p>Aromatic rice served with tender meat and vegetables</p>
-        </div>
-        <div class="culinaryClass">
-            <img src="./images/image1.jpeg" alt="">
-            <h4>spiced Rice Platter</h4>
-            <p>Aromatic rice served with tender meat and vegetables</p>
+            <img src="./images/chai-975685_1280.jpg" alt="">
+            <h4>Somali Tea</h4>
+            <p>Aromatic spiced tea served throuout the day</p>
         </div>
     </div>
     
 </div>
 
+<!--The Menu Section-->
+<div class="Menu-section">
+    <h1>Our Menu </h1>
+    <p>Discover our authentic Somali dishes </p>
+    </div>
+
+    <div class="allTheMenu">
+
+<div class="Main-Dishes">
+
+    <h2>Main Dishes</h2>
+    <div class="category-items"></div>
+    <ul>
+        <li><h3>Hilib Ari <span>$15.99</span></h3> 
+        <p>Tender goat meat served with spiced rice.</p>
+    </li>
+        <li><h3>Bariis iyo Hilib <span>$14.99</span></h3> 
+        <p>Somali-style rice with braised beef.</p>
+    </li>
+        <li><h3>Suqaar <span>$13.99</span></h3>
+        <p>Diced meat sautéed with vegetables.</p> 
+    </li>
+        <li><h3>Sabaayad <span>$11.99</span></h3> 
+        <p>Flatbread served with curry sauce.</p>
+    </li>
+    </ul>
+</div>
+<div class="appetizer">
+
+    <h2> appetizers</h2>
+    <div class="category-items"></div>
+    <ul>
+        <li><h3>Sanbusa <span>$2.99</span></h3> 
+        <p>Crispy pastry filled with spiced meat.</p>
+    </li>
+        <li><h3> Bajiye <span>$4.99</span></h3>
+        <p>Bean fritters with green chilies.</p> 
+    </li>
+        <li><h3> Malawah<span>$3.99</span></h3> 
+        <p>Sweet pancake-like bread.</p>
+    </li>
+        
+    </ul>
+
+</div>
+<div class="Drink">
+    <h2>Drinks</h2>
+    <div class="category-items"></div>
+    <ul>
+        <li><h3>Shaah <span>$2.99</span></h3> 
+        <p>Somali spiced tea.</p>
+    </li>
+        <li><h3>Qaxwo <span>$2.99</span></h3>
+        <p>Traditional Somali coffee.</p> 
+    </li>
+        <li><h3>Mango Juice<span>$3.99</span></h3> <p>
+            Fresh mango juice.
+        </p>
+    </li>
+        
+    </ul>
+    
+</div>
+
+</div>
+
 
 <!-- This is Our Story Section -->
  <div class="ourStory">
-    <div class="ourStoryImg">
-        <img src="images/image1.jpeg" alt="">
+    <div class="storyimg">
+        <img class="storyimge" alt="Story Image">
     </div>
     <div class="ourStoryBody">
         <h2>Our Story</h2>
@@ -145,5 +223,6 @@
         <p>©️ 2025 Sanag Restaurant. All rights reserved.</p>
     </div>
    </div>
+   <script src="./script.js"></script>
 </body>
 </html>
